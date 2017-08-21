@@ -1,0 +1,22 @@
+AIM- It is a spam detection model in which we need to identify whether a particular mail is spam or not
+
+Steps:
+
+1. Import pandas
+2. Import the file in which dataset is given
+3. Use 1 to detect spam and 0 to detect ham(since scikit deals only with numerical data)
+4. Introducing bag of words concept- Take a piece of text and count the frequency of a given word
+5. To handle this we need a counnt tokenizer which tokenizes the string and given an integer id to each token and counts its occurance. Procedure:
+	5.1: Converting all strings to their lower case form
+	5.2: Removing all punctuations
+	5.3: Tokenization
+	5.4: Counting frequencies
+6. Implementing bag of words using scikit-learn(Count Vectorizer which is the same thing one we did above)	
+7. Training and testing sets
+	7.1: Split dataset into training and testing set by using train_test_split method in sklearn
+	7.2: X_train for sms_message column(training)
+	7.3: y_train for label column(training)
+	7.4: X_test for sms_message(testing)
+	7.5: y_test for label(testing)
+7. Applying bag of words processing
+8. Bayes theorem and its implementation	
